@@ -1,0 +1,11 @@
+.flags-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flag {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+    margin-right: 10px;
+}
