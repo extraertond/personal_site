@@ -35,7 +35,8 @@ i18n
               frontend_developer: "Frontend Developer",
               backend_developer: "Backend Developer",
               fullstack_developer: "FullStack Web Developer"
-            }
+            },
+            copyright: "Copyright © 2022 Nestor Fernandez"
         }
       },
       es: {
@@ -58,7 +59,9 @@ i18n
               frontend_developer: "Desarrollador Frontend",
               backend_developer: "Desarrollador Backend",
               fullstack_developer: "Desarrollador Web FullStack"
-            }
+            },
+            copyright: "Copyright © 2022 Néstor Fernández"
+
         }
       }
     }
