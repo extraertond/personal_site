@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { ADD_CHAR_PERIOD, REMOVE_CHAR_PERIOD, CHANGE_TOKEN_PERIOD } from "../../../constants/constants";
 import "./writter.scss";
 
 const Writter: React.FC<{ tokens: string[] }> = ({ tokens }) => {
+    const { t } = useTranslation();
+
     const [text, setText] = useState("|");
     const [tokenIndex, setTokenIndex] = useState(0);
     const [charIndex, setCharIndex] = useState(0);
@@ -15,8 +18,8 @@ const Writter: React.FC<{ tokens: string[] }> = ({ tokens }) => {
     const scheduleTokens = () => {
         if (charIndex === 0 && !direction) {
             nextToken();
-        } else if (charIndex + 1 === tokens[tokenIndex].length && direction) {
-            changeDirection(false, tokens[tokenIndex].length);
+        } else if (charIndex + 1 === t(tokens[tokenIndex]).length && direction) {
+            changeDirection(false, t(tokens[tokenIndex]).length);
         } else if (charIndex !== 0 && !direction) {
             nextChar(charIndex - 1, REMOVE_CHAR_PERIOD);
         } else if (charIndex === 0 && !direction) {
@@ -39,7 +42,7 @@ const Writter: React.FC<{ tokens: string[] }> = ({ tokens }) => {
         setTimeout(() => {
             setCharIndex(newCharIndex);
         }, period);
-        setText(tokens[tokenIndex].substring(0, newCharIndex) + " ...");
+        setText(t(tokens[tokenIndex]).substring(0, newCharIndex) + " ...");
     };
 
     const changeDirection = (newDirection: boolean, newCharIndex: number = 0) => {
@@ -47,7 +50,7 @@ const Writter: React.FC<{ tokens: string[] }> = ({ tokens }) => {
             setCharIndex(newCharIndex);
         }, CHANGE_TOKEN_PERIOD);
         setDirection(newDirection);
-        setText(tokens[tokenIndex].substring(0, newCharIndex + 1) + " ...");
+        setText(t(tokens[tokenIndex]).substring(0, newCharIndex + 1) + " ...");
     };
 
     return (

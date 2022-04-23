@@ -6,7 +6,6 @@ i18n
   // detect user language
   .use(LanguageDetector)
   .use(initReactI18next)
-  // init i18next
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
     debug: true,
@@ -18,15 +17,15 @@ i18n
       en: {
         translation: {
             header: {
-                developer: "developer",
                 english: "English",
                 spanish: "Spanish"
             },
             links: {
-              home: "home",
-              experience: "experience",
-              abilities: "abilities",
-              contact: "contact"
+              profile: "Profile",
+              education: "Education",
+              experience: "Experience",
+              abilities: "Abilities",
+              contact: "Contact"
             },
             personal_info: {
               fullname: "Nestor Fernandez",
@@ -42,15 +41,15 @@ i18n
       es: {
         translation: {
             header: {
-                developer: "desarrollador",
                 english: "Inglés",
                 spanish: "Español"
             },
             links: {
-              home: "inicio",
-              experience: "experiencia",
-              abilities: "habilidades",
-              contact: "contacto"
+              profile: "Perfil",
+              education: "Educación",
+              experience: "Experiencia",
+              abilities: "Habilidades",
+              contact: "Contacto"
             },
             personal_info: {
               fullname: "Néstor Fernández",

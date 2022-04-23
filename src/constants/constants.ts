@@ -6,9 +6,18 @@ export const EMAIL = "fernandeznestor1996@gmail.com";
 export const LINKEDIN_LINK = "https://www.linkedin.com/in/n%C3%A9stor-fern%C3%A1ndez-3b19541b6/";
 export const GITHUB_LINK = "https://github.com/extraertond";
 
-export const NAVBAR_LINKS = [
-    { label: "links.home", link: "" },
-    { label: "links.experience", link: "" },
-    { label: "links.abilities", link: "" },
-    { label: "links.contact", link: "" },
+export const SECTIONS = [
+    { id: "profile", label: "links.profile" },
+    { id: "education", label: "links.education"},
+    { id: "experience", label: "links.experience" },
+    { id: "abilities", label: "links.abilities" },
+    { id: "contact", label: "links.contact" },
+];
+
+export const ROLES = [
+    "personal_info.software_engineer",
+    "personal_info.software_developer",
+    "personal_info.frontend_developer",
+    "personal_info.backend_developer",
+    "personal_info.fullstack_developer"
 ];
