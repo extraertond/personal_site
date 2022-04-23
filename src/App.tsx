@@ -1,12 +1,14 @@
-import Navbar from "./assets/header/navbar/navbar";
+import Navbar from "./header/navbar/navbar";
+import PersonalInfo from "./blocks/personal-info/personal-info";
 import "./App.scss";
 
-function App() {
+const App: React.FC<{}> = () => {
   return (
     <div className="App">
       <Navbar />
+      <PersonalInfo />
     </div>
   );
-}
+};
 
 export default App;

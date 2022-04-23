@@ -1,0 +1,2 @@
+export const CHANGE_TOKEN_PERIOD = 3000;
+export const CHANGE_CHAR_PERIOD = 100;

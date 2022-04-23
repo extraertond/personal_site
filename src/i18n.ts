@@ -27,6 +27,14 @@ i18n
               experience: "experience",
               abilities: "abilities",
               contact: "contact"
+            },
+            personal_info: {
+              fullname: "Nestor Fernandez",
+              software_engineer: "Software Engineer",
+              software_developer: "Software Developer",
+              frontend_developer: "Frontend Developer",
+              backend_developer: "Backend Developer",
+              fullstack_developer: "FullStack Web Developer"
             }
         }
       },
@@ -42,6 +50,14 @@ i18n
               experience: "experiencia",
               abilities: "habilidades",
               contact: "contacto"
+            },
+            personal_info: {
+              fullname: "Néstor Fernández",
+              software_engineer: "Ingenierio del Software",
+              software_developer: "Desarrollador Software",
+              frontend_developer: "Desarrollador Frontend",
+              backend_developer: "Desarrollador Backend",
+              fullstack_developer: "Desarrollador Web FullStack"
             }
         }
       }
