@@ -2,6 +2,7 @@ import Navbar from "./components/header/navbar/navbar";
 import PersonalInfo from "./components/personal-info/personal-info";
 import Footer from "./components/footer/footer";
 import { useRef } from "react";
+import ScrollButton from "./components/shared/scroll-button/scroll-button";
 import "./App.scss";
 
 const App: React.FC<{}> = () => {
@@ -18,6 +19,7 @@ const App: React.FC<{}> = () => {
             <Navbar innerRefs={refs} />
             <PersonalInfo innerRefs={refs} />
             <Footer />
+            <ScrollButton />
         </div>
     );
 };
