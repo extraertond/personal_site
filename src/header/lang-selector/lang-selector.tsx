@@ -1,7 +1,7 @@
 import Tooltip from "@mui/material/Tooltip";
 import { useTranslation } from "react-i18next";
-import spainFlag from "../../../assets/gifs/spain-flag.gif";
-import ukFlag from "../../../assets/gifs/uk-flag.gif";
+import spainFlag from "../../assets/gifs/spain-flag.gif";
+import ukFlag from "../../assets/gifs/uk-flag.gif";
 import "./lang-selector.scss";
 
 function LangSelector() {

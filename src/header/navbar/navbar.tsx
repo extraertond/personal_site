@@ -3,7 +3,7 @@ import LangSelector from "../lang-selector/lang-selector";
 import "./navbar.scss";
 
 function Navbar() {
-  const { i18n, t } = useTranslation();
+  const { t } = useTranslation();
   const links = [
     { label: "links.home", link: "" },
     { label: "links.experience", link: "" },
@@ -14,8 +14,12 @@ function Navbar() {
   return (
     <div className="container">
       <div className="links">
-        {links.map((link) => {
-          return <span className="link">{t(link.label)}</span>;
+        {links.map((link, index) => {
+          return (
+            <span key={index} className="link">
+              {t(link.label)}
+            </span>
+          );
         })}
       </div>
       <LangSelector />
