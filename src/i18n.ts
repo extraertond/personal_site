@@ -21,11 +21,11 @@ i18n
                 spanish: "Spanish"
             },
             links: {
-              profile: "Profile",
-              education: "Education",
-              experience: "Experience",
-              abilities: "Abilities",
-              contact: "Contact"
+              profile: "PROFILE",
+              education: "EDUCATION",
+              experience: "EXPERIENCE",
+              abilities: "ABILITIES",
+              contact: "CONTACT"
             },
             personal_info: {
               fullname: "Nestor Fernandez",
@@ -45,11 +45,11 @@ i18n
                 spanish: "Español"
             },
             links: {
-              profile: "Perfil",
-              education: "Educación",
-              experience: "Experiencia",
-              abilities: "Habilidades",
-              contact: "Contacto"
+              profile: "PERFIL",
+              education: "EDUCACIÓN",
+              experience: "EXPERIENCIA",
+              abilities: "HABILIDADES",
+              contact: "CONTACTO"
             },
             personal_info: {
               fullname: "Néstor Fernández",
