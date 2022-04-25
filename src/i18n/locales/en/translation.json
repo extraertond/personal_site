@@ -1,0 +1,31 @@
+{
+    "header": {
+        "english": "English",
+        "spanish": "Spanish"
+    },
+    "links": {
+        "about": "ABOUT",
+        "education": "EDUCATION",
+        "experience": "EXPERIENCE",
+        "abilities": "ABILITIES",
+        "contact": "CONTACT"
+    },
+    "personal-info": {
+        "fullname": "Nestor Fernandez",
+        "software-engineer": "Software Engineer",
+        "software-developer": "Software Developer",
+        "frontend-developer": "Frontend Developer",
+        "backend-developer": "Backend Developer",
+        "fullstack-developer": "FullStack Web Developer"
+    },
+    "copyright": "Copyright © 2022 Nestor Fernandez",
+    "about": {
+        "title": "Sobre mí",
+        "spin-button": "Spin me!",
+        "paragraph": {
+            "1": "Desde que era un niño <strong>siempre me ha apasionado la tecnología</strong>, recuerdo con unos 8 o 9 años como desmontaba aparatos electrónicos que ya no funcionaban y utilizaba las piezas para mis 'experimentos'. Conforme crecí empecé a desarrollar ese interés también por el mundo de la informática y la programación, creando mi primera página sobre videojuegos con 12 años.",
+            "2": "Tengo la suerte de <strong>estar enamorado de mi oficio</strong>, lo que implica que disfruto mientras trabajo y siempre busco un enfoque innovador y la máxima calidad del producto creado a la hora de plantear soluciones.",
+            "3": "Me gradué como <strong>Ingenierio del Software</strong> en la Univesidad de Málaga en 2022. Actualmente trabajo como Desarrollador Software, en el campo del <strong>Desarrollo Web</strong>, tanto en la parte Frontend como Backend (aunque haya gente que no le guste este concepto, me considero <strong>Desarrollador Web FullStack</strong>) con tecnologías modernas como <strong>React</strong> y <strong>Node</strong>, pero también me interesa la Inteligencia Artifial y la Ciberseguridad."
+        }
+    }
+}
