@@ -7,7 +7,7 @@ import "./App.scss";
 
 const App: React.FC<{}> = () => {
     const refs = [
-        { label: "profile", innerRef: useRef<null | HTMLDivElement>(null) },
+        { label: "about", innerRef: useRef<null | HTMLDivElement>(null) },
         { label: "education", innerRef: useRef<null | HTMLDivElement>(null) },
         { label: "experience", innerRef: useRef<null | HTMLDivElement>(null) },
         { label: "abilities", innerRef: useRef<null | HTMLDivElement>(null) },

@@ -7,7 +7,7 @@ export const LINKEDIN_LINK = "https://www.linkedin.com/in/n%C3%A9stor-fern%C3%A1
 export const GITHUB_LINK = "https://github.com/extraertond";
 
 export const SECTIONS = [
-    { id: "profile", label: "links.profile" },
+    { id: "about", label: "links.about" },
     { id: "education", label: "links.education"},
     { id: "experience", label: "links.experience" },
     { id: "abilities", label: "links.abilities" },
@@ -15,9 +15,11 @@ export const SECTIONS = [
 ];
 
 export const ROLES = [
-    "personal_info.software_engineer",
-    "personal_info.software_developer",
-    "personal_info.frontend_developer",
-    "personal_info.backend_developer",
-    "personal_info.fullstack_developer"
+    "personal-info.software-engineer",
+    "personal-info.software-developer",
+    "personal-info.frontend-developer",
+    "personal-info.backend-developer",
+    "personal-info.fullstack-developer"
 ];
+
+export const ABOUT_PARAGRAPH_LABELS = ["1", "2", "3"];
