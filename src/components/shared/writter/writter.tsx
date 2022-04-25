@@ -54,7 +54,7 @@ const Writter: React.FC<{ tokens: string[] }> = ({ tokens }) => {
     };
 
     return (
-        <div className="role-name">
+        <div className="text">
             <span>{text}</span>
         </div>
     );
