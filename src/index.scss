@@ -1,29 +1,40 @@
+@import "styles/globals";
+@import "styles/variables";
+
 @font-face {
-  font-family: 'Sequel';
-  src: local('Sequel'), url(./assets/fonts/sequel.woff2) format('woff2');
+    font-family: "Sequel";
+    src: local("Sequel"), url(./assets/fonts/sequel.woff2) format("woff2");
 }
 
 @font-face {
-  font-family: 'Bebas';
-  src: local('Bebas'), url(./assets/fonts/bebas.ttf) format('opentype');
+    font-family: "Bebas";
+    src: local("Bebas"), url(./assets/fonts/bebas.ttf) format("opentype");
 }
 
 @font-face {
-  font-family: 'Jura';
-  src: local('Jura'), url(./assets/fonts/jura.ttf) format('opentype');
+    font-family: "Bai Jamjuree";
+    src: local("Bai Jamjuree"), url(./assets/fonts/bai_jamjuree.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: "Bai Jamjuree";
+    src: local("Bai Jamjuree"), url(./assets/fonts/bai_jamjuree_bold.ttf) format("opentype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Jura";
+    src: local("Jura"), url(./assets/fonts/jura.ttf) format("opentype");
 }
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+        "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
