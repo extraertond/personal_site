@@ -20,12 +20,30 @@
     },
     "copyright": "Copyright © 2022 Nestor Fernandez",
     "about": {
-        "title": "Sobre mí",
+        "title": "About me",
         "spin-button": "Spin me!",
         "paragraph": {
-            "1": "Desde que era un niño <strong>siempre me ha apasionado la tecnología</strong>, recuerdo con unos 8 o 9 años como desmontaba aparatos electrónicos que ya no funcionaban y utilizaba las piezas para mis 'experimentos'. Conforme crecí empecé a desarrollar ese interés también por el mundo de la informática y la programación, creando mi primera página sobre videojuegos con 12 años.",
+            "1": "Since I was a child <strong>I have always been passionate about technology.</strong>, I remember when i was 8 or 9 years old how I disassembled the electronic devices that no longer worked and used the parts for my 'experiments'. As I grew older I began develop the interest for computing and programming, creating my first page about videogames when I was 12 years old.",
             "2": "Tengo la suerte de <strong>estar enamorado de mi oficio</strong>, lo que implica que disfruto mientras trabajo y siempre busco un enfoque innovador y la máxima calidad del producto creado a la hora de plantear soluciones.",
             "3": "Me gradué como <strong>Ingenierio del Software</strong> en la Univesidad de Málaga en 2022. Actualmente trabajo como Desarrollador Software, en el campo del <strong>Desarrollo Web</strong>, tanto en la parte Frontend como Backend (aunque haya gente que no le guste este concepto, me considero <strong>Desarrollador Web FullStack</strong>) con tecnologías modernas como <strong>React</strong> y <strong>Node</strong>, pero también me interesa la Inteligencia Artifial y la Ciberseguridad."
+        }
+    },
+    "education": {
+        "title": "Educations",
+        "school": {
+            "name": "Al-Baytar High School",
+            "title": "High School (2008 - 2016)",
+            "description": "En este instituto estudié toda la etapa secundaria. Disfruté especialmente de las asignaturas de ciencias: matemáticas, biología, física y química. En tecnología pude escribir <strong>mis primeros programas con Java.</strong>"
+        },
+        "course": {
+            "name": "University of Malaga",
+            "title": "Setup and Configuration of PC (2016)",
+            "description": "Curso oficial de extensión universitaria en el que aprendí en profundidad la funcionalidad y como interactúan entre sí los componentes hardware de un PC y las mejores combinaciones de estos."
+        },
+        "university": {
+            "name": "University of Malaga",
+            "title": "Software Engineering (2016 - 2022)",
+            "description": "En la universidad aprendí todas las bases de la ingeniería del Software: <strong>bases de datos</strong>, fundamentos de la programación, sistemas operativos, <strong>ingeniería de requisitos, metodologías ágiles y clásicas</strong> entre otras muchas cosas. Desarrollé unos cuantos <strong>proyectos de aplicaciones web</strong> con Java EE, Laravel (PHP) y sobre todo <strong>React, Express, MongoDB y Firebase.</strong>"
         }
     }
 }

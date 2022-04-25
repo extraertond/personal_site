@@ -1,0 +1,64 @@
+.education-block-container {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.start {
+    text-align: start;
+}
+
+.sm-education-container,
+.md-education-container,
+.lg-education-container {
+    display: flex;
+    .education {
+        max-width: 600px;
+        .education-img {
+            border: 5px solid white;
+            border-radius: 10px;
+        }
+
+        .clip {
+            width: 50px;
+            transform: rotate(40deg);
+            margin-bottom: -55px;
+            left: 0;
+        }
+    }
+}
+
+.sm-education-container {
+    justify-content: start;
+    font-size: 15px;
+    .education {
+        img {
+            max-width: 170px;
+        }
+    }
+}
+
+.md-education-container {
+    justify-content: center;
+    font-size: 17px;
+    .education {
+        max-width: 700px;
+        img {
+            max-width: 200px;
+        }
+    }
+}
+
+.lg-education-container {
+    justify-content: end;
+    font-size: 19px;
+    .education {
+        max-width: 800px;
+        img {
+            max-width: 220px;
+        }
+    }
+}
+
+.bot-arrow {
+    transform: rotate(90deg);
+}

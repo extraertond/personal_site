@@ -1,8 +1,18 @@
-.social-media-container {
+.education-container {
     display: flex;
-    justify-content: space-around;
-    min-width: 300px;
-    padding: 30px 0px;
+    flex-direction: column;
+    padding: 40px 20px;
+    color: white;
 }
 
+.educations {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 60px;
+    text-align: center;
 
+    td {
+        padding: 10px;
+    }
+}
