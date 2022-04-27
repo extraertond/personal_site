@@ -19,7 +19,7 @@ const Education: React.FC<Props> = ({ education, inProp }: Props) => {
     return (
         <div>
             <FadeElement in={inProp}>
-                <div className={`${education.size}-education-container`}>
+                <div id={education.key} className={`${education.size}-education-container`}>
                     <div className="education-block-container">
                         <div className="education">
                             <table>

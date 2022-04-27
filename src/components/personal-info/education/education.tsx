@@ -7,32 +7,31 @@ import "./education.scss";
 const Education: React.FC<{ innerRefs: any[] }> = ({ innerRefs }) => {
     const { t } = useTranslation();
     const [inSchool, setInSchool] = useState(false);
-    const [inUniversity, setInUniversity] = useState(false);
     const [inCourse, setInCourse] = useState(false);
+    const [inUniversity, setInUniversity] = useState(false);
 
     useEffect(() => {
+        initTransition("education-title", true, setInSchool);
+        initTransition("school", inSchool, setInCourse);
+        initTransition("course", inCourse, setInUniversity);
+    }, [inSchool, inCourse]);
+
+    const initTransition = (id: string, prevIn: boolean, setIn: (arg0: boolean) => void) => {
+        console.log("Inini");
         const observer = new IntersectionObserver(
             (entries) => {
                 if (entries[0].isIntersecting === true) {
-                    initFadeTransition();
+                    setTimeout(() => {
+                        if (prevIn) {
+                            setIn(true);
+                        }
+                    }, 1000);
                 }
             },
             { threshold: [1] }
         );
-        const educationTitle = document.querySelector("#education-title")!;
+        const educationTitle = document.querySelector(`#${id}`)!;
         observer.observe(educationTitle);
-    });
-
-    const initFadeTransition = () => {
-        setTimeout(() => {
-            setInSchool(true);
-        }, 1000);
-        setTimeout(() => {
-            setInCourse(true);
-        }, 3000);
-        setTimeout(() => {
-            setInUniversity(true);
-        }, 5000);
     };
 
     const getInProp = (key: string) => {
@@ -52,7 +51,7 @@ const Education: React.FC<{ innerRefs: any[] }> = ({ innerRefs }) => {
                 {t("education.title")}
             </span>
             <div className="educations">
-                {EDUCATIONS.map((education, index) => (
+                {EDUCATIONS.map((education) => (
                     <EducationBlock
                         key={education.key}
                         education={education}
