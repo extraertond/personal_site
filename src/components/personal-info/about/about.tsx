@@ -32,7 +32,7 @@ const About: React.FC<{ innerRefs: any[] }> = ({ innerRefs }) => {
                             }}
                             className="avatar-container"
                         >
-                            <img className="avatar" src={avatar}></img>
+                            <img className="avatar" src={avatar} alt="avatar"></img>
                             <button onClick={spin}>{t("about.spin-button")}</button>
                         </div>
                         <div className="text-container">
