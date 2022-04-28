@@ -1,8 +1,26 @@
-.social-media-container {
+.contact-container {
     display: flex;
-    justify-content: space-around;
-    min-width: 300px;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
     padding: 30px 0px;
+    color: black;
 }
 
-
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 460px;
+    margin-top: 50px;
+    .row {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+        .margin {
+            margin-right: 15px;
+        }
+    }
+}

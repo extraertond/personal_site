@@ -45,5 +45,15 @@
             "title": "Software Engineering (2016 - 2022)",
             "description": "At university I learned all the basics of computer science: <strong>Databases</strong>, fundamentals of programming, operative systems, <strong>requirements engineering, agile and classical methodologies</strong> among many other things. I developed  a few <strong>web applications projects</strong> with Java EE, Laravel (PHP) and specially with <strong>React, Express, MongoDB and Firebase.</strong>"
         }
+    },
+    "contact": {
+        "title": "Contact",
+        "form": {
+            "first-name-label": "First Name",
+            "last-name-label": "Last Name",
+            "phone-label": "Phone number",
+            "email-label": "Email",
+            "message-label": "Message"
+        }
     }
 }
