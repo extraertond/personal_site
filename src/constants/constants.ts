@@ -28,22 +28,19 @@ export const ROLES = [
 
 export const EDUCATIONS = [
     {
-        key: "school",
-        size: "sm",
+        key: "university",
         inProp: false,
-        img: bachellor
+        img: university
     },
     {
         key: "course",
-        size: "md",
         inProp: false,
         img: course
     },
     {
-        key: "university",
-        size: "lg",
+        key: "school",
         inProp: false,
-        img: university
+        img: bachellor
     }
 ];
 

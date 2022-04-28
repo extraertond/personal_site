@@ -11,13 +11,12 @@ const Education: React.FC<{ innerRefs: any[] }> = ({ innerRefs }) => {
     const [inUniversity, setInUniversity] = useState(false);
 
     useEffect(() => {
-        initTransition("education-title", true, setInSchool);
-        initTransition("school", inSchool, setInCourse);
-        initTransition("course", inCourse, setInUniversity);
-    }, [inSchool, inCourse]);
+        initTransition("education-title", true, setInUniversity);
+        initTransition("university", inUniversity, setInCourse);
+        initTransition("course", inCourse, setInSchool);
+    }, [inUniversity, inCourse]);
 
     const initTransition = (id: string, prevIn: boolean, setIn: (arg0: boolean) => void) => {
-        console.log("Inini");
         const observer = new IntersectionObserver(
             (entries) => {
                 if (entries[0].isIntersecting === true) {
@@ -30,8 +29,8 @@ const Education: React.FC<{ innerRefs: any[] }> = ({ innerRefs }) => {
             },
             { threshold: [1] }
         );
-        const educationTitle = document.querySelector(`#${id}`)!;
-        observer.observe(educationTitle);
+        const component = document.querySelector(`#${id}`)!;
+        observer.observe(component);
     };
 
     const getInProp = (key: string) => {
