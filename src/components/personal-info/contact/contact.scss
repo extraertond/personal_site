@@ -7,7 +7,7 @@
     color: black;
 }
 
-.form {
+form {
     display: flex;
     flex-direction: column;
     width: 460px;
@@ -21,6 +21,18 @@
         }
         .margin {
             margin-right: 15px;
+        }
+        .prefix-width {
+            width: 140px;
+        }
+    }
+
+    button {
+        font-family: Jura !important;
+        font-size: 20px !important;
+        background-color: black !important;
+        &:hover {
+            background-color: rgba(34, 34, 34) !important;
         }
     }
 }
