@@ -51,9 +51,15 @@
         "form": {
             "first-name-label": "First Name",
             "last-name-label": "Last Name",
+            "prefix-label": "Prefix",
             "phone-label": "Phone number",
             "email-label": "Email",
-            "message-label": "Message"
+            "message-label": "Message",
+            "prefix-error": "Prefix is mandatory",
+            "email-error": "The email is incorrect",
+            "phone-number-error": "The phone number is too short",
+            "message-error": "The message is too short",
+            "submit": "Send"
         }
     }
 }

@@ -45,5 +45,21 @@
             "title": "Ingeniería del Software (2016 - 2022)",
             "description": "En la universidad aprendí todas las bases de la ingeniería del Software: <strong>bases de datos</strong>, fundamentos de la programación, sistemas operativos, <strong>ingeniería de requisitos, metodologías ágiles y clásicas</strong> entre otras muchas cosas. Desarrollé unos cuantos <strong>proyectos de aplicaciones web</strong> con Java EE, Laravel (PHP) y sobre todo <strong>React, Express, MongoDB y Firebase.</strong>"
         }
+    },
+    "contact": {
+        "title": "Contacto",
+        "form": {
+            "first-name-label": "Nombre",
+            "last-name-label": "Apellidos",
+            "prefix-label": "Prefijo",
+            "phone-label": "Número de teléfono",
+            "email-label": "Email",
+            "message-label": "Mensaje",
+            "prefix-error": "Prefijo es obligatorio",
+            "email-error": "El email es incorrecto",
+            "phone-number-error": "El número de teléfono es demasiado corto",
+            "message-error": "El mensaje es demasiado corto",
+            "submit": "Enviar"
+        }
     }
 }
