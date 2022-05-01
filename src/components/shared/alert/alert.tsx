@@ -1,6 +1,7 @@
 import { Close } from "@mui/icons-material";
 import { Collapse, Alert as MuiAlert, AlertTitle } from "@mui/material";
 import { Trans, useTranslation } from "react-i18next";
+import { EMAIL } from "../../../constants/constants";
 import "./alert.scss";
 
 const Alert: React.FC<{ errored: boolean; open: boolean; setOpen: any }> = ({ errored, open, setOpen }) => {
@@ -23,7 +24,10 @@ const Alert: React.FC<{ errored: boolean; open: boolean; setOpen: any }> = ({ er
                 <AlertTitle>
                     <strong>{t(errored ? "alerts.error-title" : "alerts.success-message-title")}</strong>
                 </AlertTitle>
-                <Trans i18nKey={errored ? "alerts.error-message-body" : "alerts.success-message-body"}></Trans>
+                <Trans
+                    values={{ email: EMAIL }}
+                    i18nKey={errored ? "alerts.error-message-body" : "alerts.success-message-body"}
+                ></Trans>
             </MuiAlert>
         </Collapse>
     );

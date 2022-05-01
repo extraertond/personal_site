@@ -65,7 +65,7 @@
     "alerts": {
         "error-title": "Error :(",
         "success-message-title": "Mensaje envíado :)",
-        "error-message-body": "El mensaje no se ha podido envíar, Inténtalo más tarde o envíame un correo directamente a <strong>fernandeznestor1996@gmail.com</strong>",
+        "error-message-body": "El mensaje no se ha podido envíar, Inténtalo más tarde o envíame un correo directamente a <strong>{{email}}</strong>",
         "success-message-body": "El mensaje se ha enviado correctamente, pronto te responderé."
     }
 }

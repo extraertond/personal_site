@@ -65,7 +65,11 @@
     "alerts": {
         "error-title": "Error :(",
         "success-message-title": "Message sent :)",
-        "error-message-body": "The message could not be sent, Please try again later or send me an email directly to <strong>fernandeznestor1996@gmail.com</strong>",
+        "error-message-body": "The message could not be sent, Please try again later or send me an email directly to <strong>{{email}}</strong>",
         "success-message-body": "The message has been sent correctly, I will answer you soon."
+    },
+    "footer": {
+        "tooltip-email-title": "Contact me",
+        "tooltip-email-body": "If you want you can contact me directly by mail: <strong>{{email}}</strong>"
     }
 }
