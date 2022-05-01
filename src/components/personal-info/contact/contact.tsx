@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import TextInput from "../../shared/inputs/text-input";
 import Send from "@mui/icons-material/Send";
 import { useState } from "react";
-import { CONTACT_FORM as defaultForm } from "../../../constants/constants";
+import { CONTACT_FORM_TEMPLATE as defaultForm } from "../../../constants/constants";
 import "./contact.scss";
 
 const Contact: React.FC<{ innerRefs: any[] }> = ({ innerRefs }) => {
@@ -21,17 +21,29 @@ const Contact: React.FC<{ innerRefs: any[] }> = ({ innerRefs }) => {
                 phone: form.phoneNumber.value,
                 message: form.message.value
             };
-            setForm({ ...defaultForm });
 
             sendEmail(body)
                 .then((response) => {
-                    setForm({ ...defaultForm });
+                    cleanForm();
                     console.log(response);
                 })
                 .catch((e) => {
                     console.log(e);
                 });
         }
+    };
+
+    const cleanForm = () => {
+        setForm((oldForm: any) => {
+            const newForm = { ...oldForm };
+            newForm.firstName.value = "";
+            newForm.lastName.value = "";
+            newForm.email.value = "";
+            newForm.prefix.value = "";
+            newForm.phoneNumber.value = "";
+            newForm.message.value = "";
+            return newForm;
+        });
     };
 
     return (

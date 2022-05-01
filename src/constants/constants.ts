@@ -30,7 +30,7 @@ export const ROLES = [
     "personal-info.fullstack-developer"
 ];
 
-export const CONTACT_FORM = {
+export const CONTACT_FORM_TEMPLATE = {
     firstName: {
         key: "firstName",
         value: "",
