@@ -1,19 +1,27 @@
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import Send from "@mui/icons-material/Send";
+import { InputAdornment } from "@mui/material";
+import { LoadingButton } from "@mui/lab";
 import { validateContactForm } from "../../../services/validator.service";
 import { sendEmail } from "../../../services/email.service";
-import { Button, InputAdornment } from "@mui/material";
-import { useTranslation } from "react-i18next";
 import TextInput from "../../shared/inputs/text-input";
-import Send from "@mui/icons-material/Send";
-import { useState } from "react";
 import { CONTACT_FORM_TEMPLATE as defaultForm } from "../../../constants/constants";
+import Alert from "../../shared/alert/alert";
 import "./contact.scss";
 
 const Contact: React.FC<{ innerRefs: any[] }> = ({ innerRefs }) => {
     const [form, setForm] = useState({ ...defaultForm });
+    const [showAlert, setShowAlert] = useState(false);
+    const [isErrored, setIsErrored] = useState(false);
+    const [loading, setLoading] = useState(false);
     const { t } = useTranslation();
-    const submit = (event: any) => {
+
+    const submit = async (event: any) => {
         event.preventDefault();
+        setShowAlert(false);
         if (validateContactForm(form, setForm)) {
+            setLoading(true);
             const body = {
                 firstname: form.firstName.value,
                 lastname: form.lastName.value,
@@ -22,14 +30,13 @@ const Contact: React.FC<{ innerRefs: any[] }> = ({ innerRefs }) => {
                 message: form.message.value
             };
 
-            sendEmail(body)
-                .then((response) => {
-                    cleanForm();
-                    console.log(response);
-                })
-                .catch((e) => {
-                    console.log(e);
-                });
+            const response = await sendEmail(body);
+            if (response === 200) {
+                cleanForm();
+            }
+            setShowAlert(true);
+            setLoading(false);
+            setIsErrored(response !== 200);
         }
     };
 
@@ -39,7 +46,7 @@ const Contact: React.FC<{ innerRefs: any[] }> = ({ innerRefs }) => {
             newForm.firstName.value = "";
             newForm.lastName.value = "";
             newForm.email.value = "";
-            newForm.prefix.value = "";
+            newForm.prefix.value = "34";
             newForm.phoneNumber.value = "";
             newForm.message.value = "";
             return newForm;
@@ -83,10 +90,17 @@ const Contact: React.FC<{ innerRefs: any[] }> = ({ innerRefs }) => {
                     <TextInput maxRows={4} inputObject={form?.message} setForm={setForm}></TextInput>
                 </div>
                 <div className="row">
-                    <Button variant="contained" type="submit" endIcon={<Send />}>
+                    <LoadingButton
+                        loadingPosition="end"
+                        loading={loading}
+                        variant="contained"
+                        type="submit"
+                        endIcon={<Send />}
+                    >
                         {t("contact.form.submit")}
-                    </Button>
+                    </LoadingButton>
                 </div>
+                <Alert open={showAlert} setOpen={setShowAlert} errored={isErrored}></Alert>
             </form>
         </div>
     );

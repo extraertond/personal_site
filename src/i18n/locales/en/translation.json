@@ -61,5 +61,11 @@
             "message-error": "The message is too short",
             "submit": "Send"
         }
+    },
+    "alerts": {
+        "error-title": "Error :(",
+        "success-message-title": "Message sent :)",
+        "error-message-body": "The message could not be sent, Please try again later or send me an email directly to <strong>fernandeznestor1996@gmail.com</strong>",
+        "success-message-body": "The message has been sent correctly, I will answer you soon."
     }
 }
