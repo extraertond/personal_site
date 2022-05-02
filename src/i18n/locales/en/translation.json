@@ -46,7 +46,23 @@
             "description": "At university I learned all the basics of computer science: <strong>Databases</strong>, fundamentals of programming, operative systems, <strong>requirements engineering, agile and classical methodologies</strong> among many other things. I developed  a few <strong>web applications projects</strong> with Java EE, Laravel (PHP) and specially with <strong>React, Express, MongoDB and Firebase.</strong>"
         }
     },
-    "experience": {},
+    "experience": {
+        "title": "Experience",
+        "sombradoble": {
+            "company": "Sombradoble SL",
+            "role": "FullStack Developer",
+            "period": "March 2020 - August 2020",
+            "description": "Extracurricular internship contract until July, then classic contract. Total functions of Full Stack Developer (Frontend web development, Backend, Server and database management...). Development for mobile applications with <strong>Ionic + React</strong>. The main stack for web development has been <strong>React in the Frontend.</strong> Regarding the backend, the stack has been <strong>MySQL, Node and Loopback.</strong>",
+            "webpage": "https://www.sombradoble.es/"
+        },
+        "nazaries": {
+            "company": "Nazaries IT",
+            "role": "FullStack Web Developer",
+            "period": "September 2020 - May 2022",
+            "description": "Mobile app development with React Native Frontend: Web app development mostly with <strong>React</strong> and to a lesser extent <strong>Angular</strong>. Backend: development of <strong>APIs and microservices with Node and Express.</strong> MySQL and Mongodb databases. Small developments with RoR and Laravel.",
+            "webpage": "https://www.nazaries.com/"
+        }
+    },
     "abilities": {
         "about-project": {
             "text": "This project has been built with React and Material UI.",
@@ -107,7 +123,21 @@
             }
         },
         "soft-skills": {
-            "title": "SOFT SKILLS"
+            "title": "SOFT SKILLS",
+            "compromise": "Compromise",
+            "compromise-description": "I like to commit myself to the objective and vision of the company.",
+            "communication": "Communication",
+            "communication-description": "Listen and understand information as well as express myself fluently.",
+            "creativity": "Creativity",
+            "creativity-description": "Proud of my ability to find optimal and ingenious solutions.",
+            "adaptation": "Adaptation",
+            "adaptation-description": "Adaptation to new work environments, methodologies and technologies.",
+            "negotiation": "Negotiation",
+            "negotiation-description": "I am good at negotiating and trying to get all parties to benefit.",
+            "learning": "Learning",
+            "learning-description": "Learning vocation, I like to always be learning technologies and new things that can improve the quality of the product.",
+            "teamwork": "Teamwork",
+            "teamwork-description": "I love working as a team and being able to help and guide my colleagues, as well as having them lend me a hand when needed, the work goes better that way!"
         }
     },
     "contact": {

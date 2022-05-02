@@ -1,7 +1,7 @@
 import Abilities from "./abilities/abilities";
 import Contact from "./contact/contact";
 import Education from "./education/education";
-import Experience from "./experience/experience";
+import Experiences from "./experience/experiences";
 import About from "./about/about";
 import "./personal-info.scss";
 
@@ -10,7 +10,7 @@ const PersonalInfo: React.FC<{ innerRefs: any[] }> = ({ innerRefs }) => {
         <>
             <About innerRefs={innerRefs} />
             <Education innerRefs={innerRefs} />
-            <Experience innerRefs={innerRefs} />
+            <Experiences innerRefs={innerRefs} />
             <Abilities innerRefs={innerRefs} />
             <Contact innerRefs={innerRefs} />
         </>

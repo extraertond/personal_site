@@ -2,7 +2,8 @@ import { useTranslation } from "react-i18next";
 import {
     LANGUAGES_SKILLS as languages,
     FRAMEWORKS_SKILLS as frameworks,
-    TECHNOLOGIES_SKILLS as technologies
+    TECHNOLOGIES_SKILLS as technologies,
+    ABILITIES_SKILLS as softSkills
 } from "../../../constants/constants";
 import AbilitiesBlock from "./abilities-block/abilities-block";
 import "./abilities.scss";
@@ -24,6 +25,7 @@ const Abilities: React.FC<{ innerRefs: any[] }> = ({ innerRefs }) => {
             ))}
             <AboutProject />
             <div className="title">{t("abilities.soft-skills.title")}</div>
+            <AbilitiesBlock blockTitle="" abilities={softSkills}></AbilitiesBlock>
         </div>
     );
 };

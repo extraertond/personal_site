@@ -16,6 +16,7 @@ import python from "../assets/svg/python.svg";
 import react from "../assets/svg/react.svg";
 import node from "../assets/svg/node.svg";
 import express from "../assets/svg/express.svg";
+import expressBlack from "../assets/svg/express-black.svg";
 import reactNative from "../assets/svg/react-native.png";
 import angular from "../assets/svg/angular.svg";
 import ionic from "../assets/svg/ionic.svg";
@@ -38,6 +39,7 @@ import bootstrap from "../assets/svg/bootstrap.svg";
 import linux from "../assets/svg/linux.svg";
 import nginx from "../assets/svg/nginx.svg";
 import pm2 from "../assets/svg/pm2.png";
+import pm2Black from "../assets/svg/pm2-black.png";
 import docker from "../assets/svg/docker.svg";
 import jenkins from "../assets/svg/jenkins.png";
 import mongodb from "../assets/svg/mongodb.svg";
@@ -179,6 +181,31 @@ export const TECHNOLOGIES_SKILLS = [
     { logo: docker, title: "abilities.hard-skills.technologies.docker", rate: 2.5 },
     { logo: jenkins, customStyle: { width: 25, marginLeft: -4}, title: "abilities.hard-skills.technologies.jenkins", rate: 2.5 },
     { logo: mongodb, title: "abilities.hard-skills.technologies.mongodb", rate: 2 }
+];
+
+export const ABILITIES_SKILLS = [
+    { title: "abilities.soft-skills.compromise", description: "abilities.soft-skills.compromise-description", rate: 5 },
+    { title: "abilities.soft-skills.communication", description: "abilities.soft-skills.communication-description", rate: 5 },
+    { title: "abilities.soft-skills.creativity", description: "abilities.soft-skills.creativity-description", rate: 4.5 },
+    { title: "abilities.soft-skills.adaptation", description: "abilities.soft-skills.adaptation-description", rate: 4.5 },
+    { title: "abilities.soft-skills.negotiation", description: "abilities.soft-skills.negotiation-description", rate: 4.5 },
+    { title: "abilities.soft-skills.learning", description: "abilities.soft-skills.learning-description", rate: 4 },
+    { title: "abilities.soft-skills.teamwork", description: "abilities.soft-skills.teamwork-description", rate: 4 }
+];
+
+export const EXPERIENCES = [
+    {
+        key: "sombradoble",
+        languages: [{logo: ts}, {logo: js}, {logo: html5}, {logo: css3, customStyle: {width: 15}}],
+        frameworks: [{logo: react}, {logo: ionic},  {logo: node}, {logo: loopback, customStyle: {width: 75}}],
+        technologies: [{logo: redux}, {logo: ts}, {logo: mysql, customStyle: {width: 45}}, {logo: bootstrap}, {logo: mui},  {logo: nginx}, {logo: pm2Black, customStyle: {width: 50}}]
+    },
+    {
+        key: "nazaries",
+        languages: [{logo: ts}, {logo: js},  {logo: php, customStyle: {width: 30}}, {logo: ruby}, {logo: c}, {logo: html5}, {logo: css3, customStyle: {width: 15}}],
+        frameworks: [{logo: react}, {logo: reactNative},  {logo: node}, {logo: expressBlack}, {logo: angular, customStyle: {width: 25}}, {logo: laravel}, {logo: ror, customStyle: {width: 27}}],
+        technologies: [{logo: redux}, {logo: mysql, customStyle: {width: 45}}, {logo: mongodb}, {logo: bootstrap}, {logo: mui}, {logo: docker, customStyle: {width: 27}}, {logo: jenkins}]
+    }
 ];
 
 export const ABOUT_PARAGRAPH_LABELS = ["1", "2", "3"];

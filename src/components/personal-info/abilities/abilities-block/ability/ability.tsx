@@ -36,7 +36,10 @@ const Ability: React.FC<{ ability: AbilityProps }> = ({ ability }) => {
             {ability.logo && (
                 <img alt="logo" src={ability.logo} style={ability.customStyle ? ability.customStyle : {}}></img>
             )}
-            <div className="text">{t(ability.title)}</div>
+            <div className="text">
+                {t(ability.title)}
+                {ability.description && <div className="description">{t(ability.description)}</div>}
+            </div>
             <div className="rate">
                 <GetStarRates />
             </div>

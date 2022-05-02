@@ -46,7 +46,23 @@
             "description": "En la universidad aprendí todas las bases de la ingeniería del Software: <strong>bases de datos</strong>, fundamentos de la programación, sistemas operativos, <strong>ingeniería de requisitos, metodologías ágiles y clásicas</strong> entre otras muchas cosas. Desarrollé unos cuantos <strong>proyectos de aplicaciones web</strong> con Java EE, Laravel (PHP) y sobre todo <strong>React, Express, MongoDB y Firebase.</strong>"
         }
     },
-    "experience": {},
+    "experience": {
+        "title": "Experience",
+        "sombradoble": {
+            "company": "Sombradoble SL",
+            "role": "FullStack Developer",
+            "period": "Marzo 2020 - Agosto 2020",
+            "description": "Contrato en prácticas extracurriculares hasta julio, luego contrato clásico. Funciones totales de Full Stack Developer (desarrollo web Frontend, Backend, Gestión del servidor y base de datos...). Desarrollo para aplicaciones móviles con <strong>Ionic + React</strong>. El stack principal para el desarrollo web ha sido <strong>React en el Frontend.</strong> Respecto al backend el stack ha sido <strong>MySQL, Node y Loopback.</strong>",
+            "webpage": "https://www.sombradoble.es/"
+        },
+        "nazaries": {
+            "company": "Nazaríes IT",
+            "role": "FullStack Web Developer",
+            "period": "Septiembre 2020 - Mayo 2022",
+            "description": "Desarrollo de aplicaciones móviles con React Native Frontend: desarrollo de aplicaciones web en su mayoría con <strong>React</strong> y en menor medida <strong>Angular</strong>. Backend: desarrollo de <strong>APIs y microservicios con Node y Express.</strong> Bases de datos MySQL y Mongodb. Pequeños desarrollos con RoR y Laravel.",
+            "webpage": "https://www.nazaries.com/"
+        }
+    },
     "abilities": {
         "title": "Habilidades",
         "about-project": {
@@ -107,7 +123,21 @@
             }
         },
         "soft-skills": {
-            "title": "SOFT SKILLS (HABILIDADES BLANDAS)"
+            "title": "SOFT SKILLS (HABILIDADES BLANDAS)",
+            "compromise": "Compromiso",
+            "compromise-description": "Me gusta comprometerme con el objetivo y visión de la empresa.",
+            "communication": "Comunicación",
+            "communication-description": "Escuchar  y entender la información así como expresarme con soltura.",
+            "creativity": "Creatividad",
+            "creativity-description": "Orgulloso de mi capacidad de encontrar soluciones óptimas y a la vez ingeniosas.",
+            "adaptation": "Adaptación",
+            "adaptation-description": "Adaptación a nuevos entornos de trabajo, metodologías y tecnologías.",
+            "negotiation": "Negociación",
+            "negotiation-description": "Soy bueno negociando e intentando que todas las partes acaben beneficiándose.",
+            "learning": "Aprendizaje",
+            "learning-description": "Vocación de formación, me gusta estar aprendiendo siempre tecnologías y cosas nuevas que puedan mejorar la calidad del producto.",
+            "teamwork": "Trabajo en Equipo",
+            "teamwork-description": "Me encanta trabajar en equipo y poder ayudar y orientar a mis compañeros, así como que ellos me echen una mano cuando hace falta, ¡el trabajo sale mejor así!"
         }
     },
     "contact": {

@@ -1,0 +1,78 @@
+.experiences {
+    display: flex;
+    flex-direction: column;
+    .info {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        .titles {
+            min-width: 260px;
+            .company-title {
+                font-size: 24px;
+                font-weight: 600;
+            }
+            .period {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+        }
+        .descriptions {
+            .role-title {
+                font-size: 24px;
+                font-weight: 600;
+                margin-bottom: 5px;
+            }
+            .company-link {
+                display: flex;
+                align-items: center;
+                color: #4e00c2;
+            }
+        }
+    }
+
+    .logos-container {
+        display: flex;
+        margin: 20px 0;
+        .logo-container {
+            border: 5px solid transparent;
+            padding: 5px 10px;
+            margin-right: 20px;
+            .logos-title {
+                text-decoration: underline;
+                font-weight: 600;
+                font-size: 14px;
+            }
+            .logos {
+                margin-top: 8px;
+            }
+            .logos,
+            .logos-last {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+                img {
+                    width: 20px;
+                    margin-right: 10px;
+                }
+            }
+        }
+        .logo-container:hover {
+            animation: pulsate 1s ease-in-out;
+            border: 5px solid transparent;
+            border-image: linear-gradient(to bottom, #bbbfbf 0%, #18191f 100%) 1;
+        }
+    }
+}
+
+hr {
+    background-color: black;
+    color: black;
+    height: 5;
+    width: 100%;
+}
+
+@keyframes pulsate {
+    0%{
+        box-shadow: 0 0 25px #5ddcff, 0 0 50px #4e00c2;
+    }
+}

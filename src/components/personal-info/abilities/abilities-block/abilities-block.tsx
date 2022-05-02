@@ -19,7 +19,7 @@ const AbilitiesBlock: React.FC<AbilitiesBlockProps> = ({ blockTitle, abilities }
         <div className="skills-container">
             <div className="skill-section">
                 <div className="title">{t(blockTitle)}</div>
-                <div className="ul">
+                <div className="columns">
                     {abilities.map((ability: AbilityProps, index: number) => (
                         <Ability key={index} ability={ability}></Ability>
                     ))}
