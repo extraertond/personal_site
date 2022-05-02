@@ -1,0 +1,22 @@
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+
+    .skill-section {
+        .title {
+            text-align: center;
+            font-size: 23px;
+            font-weight: 600;
+            font-family: Jura;
+        }
+
+        .ul {
+            columns: 2;
+            -webkit-columns: 2;
+            -moz-columns: 2;
+        }
+    }
+}

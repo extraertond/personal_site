@@ -1,0 +1,18 @@
+.ability {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+        width: 18px;
+        margin-right: 10px;
+    }
+    .text {
+        margin-bottom: 1px;
+        font-size: 21px;
+        margin-right: 10px;
+    }
+    .rate {
+        display: flex;
+        justify-content: center;
+    }
+}

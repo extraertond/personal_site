@@ -46,6 +46,70 @@
             "description": "En la universidad aprendí todas las bases de la ingeniería del Software: <strong>bases de datos</strong>, fundamentos de la programación, sistemas operativos, <strong>ingeniería de requisitos, metodologías ágiles y clásicas</strong> entre otras muchas cosas. Desarrollé unos cuantos <strong>proyectos de aplicaciones web</strong> con Java EE, Laravel (PHP) y sobre todo <strong>React, Express, MongoDB y Firebase.</strong>"
         }
     },
+    "experience": {},
+    "abilities": {
+        "title": "Habilidades",
+        "about-project": {
+            "text": "Este proyecto se ha construido con React y Material UI.",
+            "button-text": "Mira este proyecto en GitHub"
+        },
+        "hard-skills": {
+            "title": "HARD SKILLS (HABILIDADES TÉCNICAS)",
+            "languages": {
+                "title": "Lenguajes de programación y maquetación",
+                "javascript": "JavaScript",
+                "typescript": "TypeScript",
+                "html5": "HTML5",
+                "css3": "CSS3",
+                "php": "PHP",
+                "java": "Java",
+                "ruby": "Ruby",
+                "c": "C/C++",
+                "python": "Python",
+                "csharp": "C#"
+
+
+            },
+            "frameworks": {
+                "title":"Frameworks",
+                "react": "React",
+                "node": "Node",
+                "express": "Express",
+                "angular": "Angular",
+                "Loopback": "Loopback",
+                "react-native": "React Native",
+                "ionic": "Ionic",
+                "loopback": "Loopback",
+                "laravel": "Laravel",
+                "ror": "Ruby On Rails (RoR)",
+                "javaee": "JavaEE"
+            },
+            "technologies":{
+                "title": "Tecnologías y Herramientas",
+                "mysql": "MySQL",
+                "redux": "Redux",
+                "bootstrap": "Bootstrap",
+                "mui": "Material UI",
+                "linux": "Linux Bash Scripts",
+                "git": "Control de Versiones (Git)",
+                "gitrepo": "Gitlab y Github",
+                "atlassian": "Atlassian Suite",
+                "google": "Google Suite",
+                "microsoft": "Microsoft Suite",
+                "trello": "Trello",
+                "scrum": "Agile y Scrum",
+                "vscode": "Visual Studio Code",
+                "pm2": "PM2",
+                "nginx": "Nginx",
+                "docker": "Docker",
+                "jenkins": "Jenkins",
+                "mongodb": "MongoDB"
+            }
+        },
+        "soft-skills": {
+            "title": "SOFT SKILLS (HABILIDADES BLANDAS)"
+        }
+    },
     "contact": {
         "title": "Contacto",
         "form": {

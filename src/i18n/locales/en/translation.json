@@ -46,6 +46,70 @@
             "description": "At university I learned all the basics of computer science: <strong>Databases</strong>, fundamentals of programming, operative systems, <strong>requirements engineering, agile and classical methodologies</strong> among many other things. I developed  a few <strong>web applications projects</strong> with Java EE, Laravel (PHP) and specially with <strong>React, Express, MongoDB and Firebase.</strong>"
         }
     },
+    "experience": {},
+    "abilities": {
+        "about-project": {
+            "text": "This project has been built with React and Material UI.",
+            "button-text": "See this project on GitHub"
+        },
+        "title": "Abilities",
+        "hard-skills": {
+            "title": "HARD SKILLS",
+            "languages": {
+                "title": "Programming and Layout Languages",
+                "javascript": "JavaScript",
+                "typescript": "TypeScript",
+                "html5": "HTML5",
+                "css3": "CSS3",
+                "php": "PHP",
+                "java": "Java",
+                "ruby": "Ruby",
+                "c": "C/C++",
+                "python": "Python",
+                "csharp": "C#"
+
+
+            },
+            "frameworks": {
+                "title":"Frameworks",
+                "react": "React",
+                "node": "Node",
+                "express": "Express",
+                "angular": "Angular",
+                "Loopback": "Loopback",
+                "react-native": "React Native",
+                "ionic": "Ionic",
+                "loopback": "Loopback",
+                "laravel": "Laravel",
+                "ror": "Ruby On Rails (RoR)",
+                "javaee": "JavaEE"
+            },
+            "technologies":{
+                "title": "Technologies and Tools",
+                "mysql": "MySQL",
+                "redux": "Redux",
+                "bootstrap": "Bootstrap",
+                "mui": "Material UI",
+                "linux": "Linux Bash Scripts",
+                "git": "Version Control (Git)",
+                "gitrepo": "Gitlab & Github",
+                "atlassian": "Atlassian Suite",
+                "google": "Google Suite",
+                "microsoft": "Microsoft Suite",
+                "trello": "Trello",
+                "scrum": "Agile & Scrum",
+                "vscode": "Visual Studio Code",
+                "pm2": "PM2",
+                "nginx": "Nginx",
+                "docker": "Docker",
+                "jenkins": "Jenkins",
+                "mongodb": "MongoDB"
+            }
+        },
+        "soft-skills": {
+            "title": "SOFT SKILLS"
+        }
+    },
     "contact": {
         "title": "Contact",
         "form": {

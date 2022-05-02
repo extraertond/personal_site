@@ -1,8 +1,13 @@
-.social-media-container {
+.abilities-container {
+    padding: 40px 20px;
     display: flex;
-    justify-content: space-around;
-    min-width: 300px;
-    padding: 30px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .title {
+        margin-bottom: 30px;
+        font-family: Sequel;
+        font-weight: normal;
+        font-size: 28px;
+    }
 }
-
-
