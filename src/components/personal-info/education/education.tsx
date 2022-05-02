@@ -11,20 +11,18 @@ const Education: React.FC<{ innerRefs: any[] }> = ({ innerRefs }) => {
     const [inUniversity, setInUniversity] = useState(false);
 
     useEffect(() => {
-        initTransition("education-title", true, setInUniversity);
-        initTransition("university", inUniversity, setInCourse);
-        initTransition("course", inCourse, setInSchool);
-    }, [inUniversity, inCourse]);
+        initTransition("education-title", setInUniversity);
+        initTransition("course", setInCourse);
+        initTransition("school", setInSchool);
+    }, []);
 
-    const initTransition = (id: string, prevIn: boolean, setIn: (arg0: boolean) => void) => {
+    const initTransition = (id: string, setIn: (arg0: boolean) => void) => {
         const observer = new IntersectionObserver(
             (entries) => {
                 if (entries[0].isIntersecting === true) {
                     setTimeout(() => {
-                        if (prevIn) {
-                            setIn(true);
-                        }
-                    }, 1000);
+                        setIn(true);
+                    }, 500);
                 }
             },
             { threshold: [1] }
