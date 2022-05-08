@@ -17,10 +17,11 @@
 
         .text {
             font-size: 15px;
-            min-height: 41.6px;
+            height: 41.6px;
 
-            @media (min-width: $md) {
+            @media (min-width: 500px) {
                 font-size: 20px;
+                height: 50px;
             }
 
             @media (min-width: $lg) {

@@ -1,3 +1,5 @@
+@import "../../../styles/variables";
+
 .contact-container {
     display: flex;
     flex-direction: column;
@@ -10,18 +12,34 @@
 form {
     display: flex;
     flex-direction: column;
-    width: 460px;
+    width: 250px;
     margin-top: 50px;
+
+    @media (min-width: 300px) {
+        width: 280px;
+    }
+
+    @media (min-width: $md) {
+        width: 380px;
+    }
+
+    @media (min-width: $lg) {
+        width: 460px;
+    }
+
     .row {
         width: 100%;
         display: flex;
         justify-content: space-around;
+
         &:not(:last-child) {
             margin-bottom: 15px;
         }
+
         .margin {
             margin-right: 15px;
         }
+
         .prefix-width {
             width: 140px;
         }
@@ -32,6 +50,7 @@ form {
         font-family: Jura !important;
         font-size: 20px !important;
         background-color: black !important;
+
         &:hover {
             background-color: rgba(34, 34, 34) !important;
         }
