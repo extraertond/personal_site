@@ -32,8 +32,8 @@ const EducationBlock: React.FC<Props> = ({ education, inProp }: Props) => {
                                 <tr>
                                     <td>
                                         <div className="start">
-                                            <img className="clip" src={clip} />
-                                            <img className="education-img" src={education.img} />
+                                            <img className="clip" alt="clip" src={clip} />
+                                            <img className="education-img" alt={education.key} src={education.img} />
                                         </div>
                                     </td>
                                     <td>

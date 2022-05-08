@@ -6,7 +6,7 @@
     "links": {
         "about": "SOBRE MÍ",
         "education": "EDUCACIÓN",
-        "experience": "EXPERIENCIA",
+        "experiences": "EXPERIENCIA",
         "abilities": "HABILIDADES",
         "contact": "CONTACTO"
     },
@@ -46,8 +46,11 @@
             "description": "En la universidad aprendí todas las bases de la ingeniería del Software: <strong>bases de datos</strong>, fundamentos de la programación, sistemas operativos, <strong>ingeniería de requisitos, metodologías ágiles y clásicas</strong> entre otras muchas cosas. Desarrollé unos cuantos <strong>proyectos de aplicaciones web</strong> con Java EE, Laravel (PHP) y sobre todo <strong>React, Express, MongoDB y Firebase.</strong>"
         }
     },
-    "experience": {
+    "experiences": {
         "title": "Experience",
+        "languages": "Lenguajes",
+        "frameworks": "Frameworks",
+        "technologies": "Tecnologías",
         "sombradoble": {
             "company": "Sombradoble SL",
             "role": "FullStack Developer",

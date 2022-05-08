@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { SECTIONS } from "../../../constants/constants";
+import { NAVBAR_SECTIONS as sections } from "../../../constants/constants";
 import LangSelector from "../lang-selector";
 import "./navbar.scss";
 
@@ -11,9 +11,9 @@ const Navbar: React.FC<{ innerRefs: any[] }> = ({ innerRefs }) => {
     };
 
     return (
-        <div className="container">
+        <div className="navbar-container">
             <div className="sections">
-                {SECTIONS.map((section) => {
+                {sections.map((section) => {
                     return (
                         <span
                             key={section.id}

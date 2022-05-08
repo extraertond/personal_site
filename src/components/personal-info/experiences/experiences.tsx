@@ -6,10 +6,10 @@ import "./experiences.scss";
 const Experiences: React.FC<{ innerRefs: any[] }> = ({ innerRefs }) => {
     const { t } = useTranslation();
     return (
-        <div ref={innerRefs.find((ref) => ref.label === "experience").innerRef} className="experience-container">
-            <span className="section-title">{t("experience.title")}</span>
+        <div ref={innerRefs.find((ref) => ref.label === "experiences").innerRef} className="experiences-container">
+            <span className="section-title">{t("experiences.title")}</span>
             {experiences.map((experience) => (
-                <ExperienceBlock experience={experience} />
+                <ExperienceBlock key={experience.key} experience={experience} />
             ))}
         </div>
     );

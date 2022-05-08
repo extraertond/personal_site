@@ -18,7 +18,7 @@ const About: React.FC<{ innerRefs: any[] }> = ({ innerRefs }) => {
 
     return (
         <>
-            <div ref={innerRefs.find((ref) => ref.label === "about").innerRef} className="personal-container">
+            <div ref={innerRefs.find((ref) => ref.label === "about").innerRef} className="about-container">
                 <div className="roles-container">
                     {t("personal-info.fullname")}
                     <Writter tokens={ROLES} />

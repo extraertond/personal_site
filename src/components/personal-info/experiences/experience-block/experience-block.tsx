@@ -17,13 +17,13 @@ const ExperienceBlock: React.FC<{ experience: ExperienceProps }> = ({ experience
             <div key={experience.key} className="experiences">
                 <div className="info">
                     <div className="titles">
-                        <div className="company-title">{t(`experience.${experience.key}.company`)}</div>
-                        <div className="period">{t(`experience.${experience.key}.period`)}</div>
+                        <div className="company-title">{t(`experiences.${experience.key}.company`)}</div>
+                        <div className="period">{t(`experiences.${experience.key}.period`)}</div>
                     </div>
                     <div className="descriptions">
-                        <div className="role-title">{t(`experience.${experience.key}.role`)}</div>
+                        <div className="role-title">{t(`experiences.${experience.key}.role`)}</div>
                         <div>
-                            <Trans i18nKey={`experience.${experience.key}.description`}></Trans>
+                            <Trans i18nKey={`experiences.${experience.key}.description`}></Trans>
                         </div>
                         <div className="company-link">
                             <LinkIcon sx={{ fontSize: 30, marginRight: "5px", marginTop: "3px" }} />
@@ -32,20 +32,21 @@ const ExperienceBlock: React.FC<{ experience: ExperienceProps }> = ({ experience
                                 rel="noreferrer"
                                 underline="hover"
                                 color="#4e00c2"
-                                href={t(`experience.${experience.key}.webpage`)}
+                                href={t(`experiences.${experience.key}.webpage`)}
                             >
-                                {t(`experience.${experience.key}.webpage`)}
+                                {t(`experiences.${experience.key}.webpage`)}
                             </Link>
                         </div>
                     </div>
                 </div>
                 <div className="logos-container">
                     <div className="logo-container">
-                        <span className="logos-title">{t("Languages")}</span>
+                        <span className="logos-title">{t("experiences.languages")}</span>
                         <div className="logos">
-                            {experience.languages.map((language) => (
+                            {experience.languages.map((language, index) => (
                                 <img
                                     alt="technology"
+                                    key={index}
                                     src={language.logo}
                                     style={language.customStyle ? language.customStyle : {}}
                                 ></img>
@@ -53,11 +54,12 @@ const ExperienceBlock: React.FC<{ experience: ExperienceProps }> = ({ experience
                         </div>
                     </div>
                     <div className="logo-container">
-                        <span className="logos-title">{t("Frameworks")}</span>
+                        <span className="logos-title">{t("experiences.frameworks")}</span>
                         <div className="logos">
-                            {experience.frameworks.map((framework) => (
+                            {experience.frameworks.map((framework, index) => (
                                 <img
                                     alt="technology"
+                                    key={index}
                                     src={framework.logo}
                                     style={framework.customStyle ? framework.customStyle : {}}
                                 ></img>
@@ -65,11 +67,12 @@ const ExperienceBlock: React.FC<{ experience: ExperienceProps }> = ({ experience
                         </div>
                     </div>
                     <div className="logo-container">
-                        <span className="logos-title">{t("Technologies")}</span>
+                        <span className="logos-title">{t("experiences.technologies")}</span>
                         <div className="logos-last">
-                            {experience.technologies.map((tech) => (
+                            {experience.technologies.map((tech, index) => (
                                 <img
                                     alt="technology"
+                                    key={index}
                                     src={tech.logo}
                                     style={tech.customStyle ? tech.customStyle : {}}
                                 ></img>

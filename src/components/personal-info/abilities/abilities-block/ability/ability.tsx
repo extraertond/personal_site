@@ -21,12 +21,12 @@ const Ability: React.FC<{ ability: AbilityProps }> = ({ ability }) => {
         const emptyStars = 5 - filledStars - (halfStar ? 1 : 0);
         return (
             <>
-                {range(filledStars).map(() => (
-                    <Star sx={{ fontSize: iconSize }}></Star>
+                {range(filledStars).map((_, index) => (
+                    <Star key={index} sx={{ fontSize: iconSize }}></Star>
                 ))}
                 {halfStar ? <StarHalf sx={{ fontSize: iconSize }}></StarHalf> : <></>}
-                {range(emptyStars).map(() => (
-                    <StarBorder sx={{ fontSize: iconSize }}></StarBorder>
+                {range(emptyStars).map((_, index) => (
+                    <StarBorder key={index} sx={{ fontSize: iconSize }}></StarBorder>
                 ))}
             </>
         );

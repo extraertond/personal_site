@@ -6,7 +6,7 @@
     "links": {
         "about": "ABOUT",
         "education": "EDUCATION",
-        "experience": "EXPERIENCE",
+        "experiences": "EXPERIENCE",
         "abilities": "ABILITIES",
         "contact": "CONTACT"
     },
@@ -46,8 +46,11 @@
             "description": "At university I learned all the basics of computer science: <strong>Databases</strong>, fundamentals of programming, operative systems, <strong>requirements engineering, agile and classical methodologies</strong> among many other things. I developed  a few <strong>web applications projects</strong> with Java EE, Laravel (PHP) and specially with <strong>React, Express, MongoDB and Firebase.</strong>"
         }
     },
-    "experience": {
+    "experiences": {
         "title": "Experience",
+        "languages": "Languages",
+        "frameworks": "Frameworks",
+        "technologies": "Technologies",
         "sombradoble": {
             "company": "Sombradoble SL",
             "role": "FullStack Developer",
