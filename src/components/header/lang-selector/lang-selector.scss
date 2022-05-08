@@ -1,6 +1,12 @@
+@import "../../../styles/variables";
+
 .flags-container {
     display: flex;
     justify-content: space-around;
+
+    @media (max-width: $lg) {
+        flex-direction: column;
+    }
 }
 
 .flag {
@@ -8,4 +14,10 @@
     height: auto;
     cursor: pointer;
     margin-right: 10px;
+
+    @media (max-width: $lg) {
+        width: 18px;
+        margin-right: 0px;
+        margin-bottom: 5px;
+    }
 }

@@ -1,8 +1,23 @@
+@import "../../../styles/variables";
+
 .social-media-container {
     display: flex;
     justify-content: space-around;
     min-width: 300px;
     padding: 30px 0px;
+
+    @media (max-width: $md) {
+        min-width: 250px;
+        padding: 16px 0px;
+    }
+
+    .icon {
+        font-size: 50px;
+
+        @media (max-width: $md) {
+            font-size: 30px;
+        }
+    }
 }
 
 .email-tooltip {
@@ -10,9 +25,16 @@
     font-family: Jura;
     max-width: 310px;
     color: rgba(0, 0, 0, 0.87);
+
     .title {
         font-size: 20px;
+
+        @media (max-width: $md) {
+            font-size: 15px;
+        }
+    }
+
+    .body {
+        font-size: 15px;
     }
 }
-
-

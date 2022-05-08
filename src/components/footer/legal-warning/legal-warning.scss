@@ -1,7 +1,13 @@
+@import "../../../styles/variables";
+
 .copyright {
     font-family: 'Jura';
     font-size: 16px;
     padding-bottom: 20px;
+
+    @media (max-width: $md) {
+        font-size: 12px;
+    }
 }
 
 
