@@ -22,11 +22,11 @@ const ExperienceBlock: React.FC<{ experience: ExperienceProps }> = ({ experience
                     </div>
                     <div className="descriptions">
                         <div className="role-title">{t(`experiences.${experience.key}.role`)}</div>
-                        <div>
+                        <p className="description">
                             <Trans i18nKey={`experiences.${experience.key}.description`}></Trans>
-                        </div>
+                        </p>
                         <div className="company-link">
-                            <LinkIcon sx={{ fontSize: 30, marginRight: "5px", marginTop: "3px" }} />
+                            <LinkIcon className="icon" />
                             <Link
                                 target="_blank"
                                 rel="noreferrer"

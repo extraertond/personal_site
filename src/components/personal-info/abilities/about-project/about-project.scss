@@ -1,11 +1,27 @@
+@import "../../../../styles/variables";
+
 .about-project-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 20px;
     font-style: italic;
+    font-size: 14px;
+
+    @media (min-width: $lg) {
+        font-size: 20px;
+        text-align: auto;
+    }
+
+    .about-text {
+        text-align: center;
+
+        @media (min-width: $lg) {
+            text-align: auto;
+        }
+    }
+
     .button {
-        padding: 10px 20px;
+        padding: 7px 14px;
         font-weight: 600;
         display: inline-block;
         margin-top: 20px;
@@ -13,15 +29,20 @@
         text-decoration: none;
         color: black;
         font-family: Jura;
-        font-size: 20px;
         background-color: white;
         border-radius: 10px;
+
+        @media (min-width: $lg) {
+            padding: 10px 20px;
+        }
     }
+
     .button:hover {
         animation: pulsate 1s ease-in-out;
     }
+
     @keyframes pulsate {
-        0%{
+        0% {
             box-shadow: 0 0 25px #5ddcff, 0 0 50px #4e00c2;
         }
     }

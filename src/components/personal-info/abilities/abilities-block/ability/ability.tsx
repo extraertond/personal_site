@@ -13,7 +13,6 @@ interface AbilityProps {
 
 const Ability: React.FC<{ ability: AbilityProps }> = ({ ability }) => {
     const { t } = useTranslation();
-    const iconSize = 20;
 
     const GetStarRates = () => {
         const filledStars = Math.trunc(ability.rate);
@@ -22,11 +21,11 @@ const Ability: React.FC<{ ability: AbilityProps }> = ({ ability }) => {
         return (
             <>
                 {range(filledStars).map((_, index) => (
-                    <Star key={index} sx={{ fontSize: iconSize }}></Star>
+                    <Star className="icon" key={index}></Star>
                 ))}
-                {halfStar ? <StarHalf sx={{ fontSize: iconSize }}></StarHalf> : <></>}
+                {halfStar ? <StarHalf className="icon"></StarHalf> : <></>}
                 {range(emptyStars).map((_, index) => (
-                    <StarBorder key={index} sx={{ fontSize: iconSize }}></StarBorder>
+                    <StarBorder className="icon" key={index}></StarBorder>
                 ))}
             </>
         );

@@ -7,7 +7,7 @@ const AboutProject: React.FC<{}> = () => {
 
     return (
         <div className="about-project-container">
-            <div>{t("abilities.about-project.text")}</div>
+            <div className="about-text">{t("abilities.about-project.text")}</div>
             <a className="button" href={repoLink} target="_blank" rel="noreferrer">
                 {t("abilities.about-project.button-text")}
             </a>

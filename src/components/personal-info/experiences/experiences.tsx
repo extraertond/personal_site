@@ -7,7 +7,7 @@ const Experiences: React.FC<{ innerRefs: any[] }> = ({ innerRefs }) => {
     const { t } = useTranslation();
     return (
         <div ref={innerRefs.find((ref) => ref.label === "experiences").innerRef} className="experiences-container">
-            <span className="section-title">{t("experiences.title")}</span>
+            <div className="section-title">{t("experiences.title")}</div>
             {experiences.map((experience) => (
                 <ExperienceBlock key={experience.key} experience={experience} />
             ))}

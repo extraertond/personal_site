@@ -1,25 +1,52 @@
+@import "../../../../../styles/variables";
+
 .ability {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 450px;
+
     &:hover {
         color: #4e00c2;
     }
+
     img {
         width: 18px;
         margin-right: 10px;
     }
+
     .text {
         margin-bottom: 1px;
-        font-size: 21px;
+        font-size: 16px;
         margin-right: 10px;
+
+        @media (min-width: $md) {
+            font-size: 18px;
+        }
+
+        @media (min-width: $lg) {
+            font-size: 21px;
+        }
+
         .description {
             font-size: 12px;
         }
     }
+
     .rate {
         display: flex;
         justify-content: center;
+
+        .icon {
+            font-size: 13px;
+
+            @media (min-width: $md) {
+                font-size: 18px;
+            }
+
+            @media (min-width: $lg) {
+                font-size: 20px;
+            }
+        }
     }
 }

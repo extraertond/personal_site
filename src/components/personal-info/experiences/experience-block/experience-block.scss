@@ -1,31 +1,72 @@
+@import "../../../../styles/variables";
+
 .experiences {
     display: flex;
     flex-direction: column;
+
     .info {
         display: flex;
         justify-content: center;
         margin-top: 30px;
+
+        @media (max-width: $lg) {
+            flex-direction: column;
+        }
+
         .titles {
             min-width: 260px;
+
             .company-title {
-                font-size: 24px;
+                font-size: 20px;
                 font-weight: 600;
+
+                @media (min-width: $lg) {
+                    font-size: 24px;
+                }
             }
+
             .period {
                 font-size: 16px;
                 margin-bottom: 20px;
             }
         }
+
         .descriptions {
             .role-title {
-                font-size: 24px;
+                font-size: 20px;
                 font-weight: 600;
                 margin-bottom: 5px;
+
+                @media (min-width: $lg) {
+                    font-size: 24px;
+                }
             }
+
+            .description {
+                @media (max-width: $lg) {
+                    font-size: 16px;
+                    margin: 0px;
+                }
+            }
+
             .company-link {
+                @media (max-width: $lg) {
+                    font-size: 16px;
+                }
+
                 display: flex;
                 align-items: center;
                 color: #4e00c2;
+
+                .icon {
+                    font-size: 20px;
+                    margin-right: 5px;
+                    margin-top: 3px;
+
+                    @media (min-width: $lg) {
+                        font-size: 30px;
+                    }
+                }
             }
         }
     }
@@ -33,31 +74,51 @@
     .logos-container {
         display: flex;
         margin: 20px 0;
+
+        @media (max-width: $lg) {
+            flex-direction: column;
+        }
+
         .logo-container {
-            border: 5px solid transparent;
-            padding: 5px 10px;
             margin-right: 20px;
+
+            @media (min-width: $lg) {
+                border: 5px solid transparent;
+                padding: 5px 10px;
+            }
+
+
             .logos-title {
                 text-decoration: underline;
                 font-weight: 600;
                 font-size: 14px;
             }
+
             .logos {
                 margin-top: 8px;
             }
+
             .logos,
             .logos-last {
                 display: flex;
                 align-items: center;
-                margin-bottom: 10px;
+
+                @media (min-width: $lg) {
+                    margin-bottom: 10px;
+                }
+
                 img {
                     width: 20px;
                     margin-right: 10px;
                 }
             }
         }
+
         .logo-container:hover {
-            border: 5px solid transparent;
+            @media (min-width: $lg) {
+                border: 5px solid transparent;
+            }
+
             border-image: linear-gradient(to bottom, #bbbfbf 0%, #18191f 100%) 1;
         }
     }
