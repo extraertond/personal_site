@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import Ability from "./ability/ability";
+import Ability from "./ability";
 import "./abilities-block.scss";
 
 interface AbilityProps {

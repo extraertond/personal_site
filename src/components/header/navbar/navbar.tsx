@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { SECTIONS } from "../../../constants/constants";
-import LangSelector from "../lang-selector/lang-selector";
+import LangSelector from "../lang-selector";
 import "./navbar.scss";
 
 const Navbar: React.FC<{ innerRefs: any[] }> = ({ innerRefs }) => {

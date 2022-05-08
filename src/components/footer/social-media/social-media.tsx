@@ -3,7 +3,7 @@ import { LinkedIn, GitHub, MailOutline } from "@mui/icons-material";
 import { styled } from "@mui/material";
 import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
 import { EMAIL, GITHUB_LINK, LINKEDIN_LINK } from "../../../constants/constants";
-import ExternalLink from "../../shared/icon-link/external-link";
+import ExternalLink from "../../shared/external-link";
 import "./social-media.scss";
 
 const EmailTooltip = styled(({ className, ...props }: any) => (

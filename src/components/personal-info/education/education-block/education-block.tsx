@@ -1,5 +1,5 @@
 import { useTranslation, Trans } from "react-i18next";
-import FadeElement from "../../../shared/fade-element/fade-element";
+import FadeElement from "../../../shared/fade-element";
 import clip from "../../../../assets/images/clip.png";
 import "./education-block.scss";
 
@@ -11,7 +11,7 @@ interface Props {
     inProp: any;
 }
 
-const Education: React.FC<Props> = ({ education, inProp }: Props) => {
+const EducationBlock: React.FC<Props> = ({ education, inProp }: Props) => {
     const { t } = useTranslation();
 
     return (
@@ -49,4 +49,4 @@ const Education: React.FC<Props> = ({ education, inProp }: Props) => {
     );
 };
 
-export default Education;
+export default EducationBlock;

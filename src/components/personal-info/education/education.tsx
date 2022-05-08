@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import { EDUCATIONS } from "../../../constants/constants";
-import EducationBlock from "./education-block/education-block";
+import EducationBlock from "./education-block";
 import "./education.scss";
 
 const Education: React.FC<{ innerRefs: any[] }> = ({ innerRefs }) => {

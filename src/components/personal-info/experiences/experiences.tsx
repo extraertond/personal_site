@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { EXPERIENCES as experiences } from "../../../constants/constants";
-import ExperienceBlock from "./experience-block/experience-block";
+import ExperienceBlock from "./experience-block";
 import "./experiences.scss";
 
 const Experiences: React.FC<{ innerRefs: any[] }> = ({ innerRefs }) => {

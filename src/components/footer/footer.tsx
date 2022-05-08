@@ -1,6 +1,6 @@
-import SocialMedia from "./social-media/social-media";
+import SocialMedia from "./social-media";
+import LegalWarning from "./legal-warning";
 import "./footer.scss";
-import LegalWarning from "./legal-warning/legal-warning";
 
 const Footer = () => {
     return (

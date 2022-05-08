@@ -5,9 +5,9 @@ import {
     TECHNOLOGIES_SKILLS as technologies,
     ABILITIES_SKILLS as softSkills
 } from "../../../constants/constants";
-import AbilitiesBlock from "./abilities-block/abilities-block";
-import "./abilities.scss";
+import AbilitiesBlock from "./abilities-block";
 import AboutProject from "./about-project/about-project";
+import "./abilities.scss";
 
 const Abilities: React.FC<{ innerRefs: any[] }> = ({ innerRefs }) => {
     const { t } = useTranslation();

@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import Send from "@mui/icons-material/Send";
 import { InputAdornment } from "@mui/material";
 import { LoadingButton } from "@mui/lab";
+import Send from "@mui/icons-material/Send";
 import { validateContactForm } from "../../../services/validator.service";
 import { sendEmail } from "../../../services/email.service";
-import TextInput from "../../shared/inputs/text-input";
 import { CONTACT_FORM_TEMPLATE as defaultForm } from "../../../constants/constants";
-import Alert from "../../shared/alert/alert";
+import TextInput from "../../shared/text-input";
+import Alert from "../../shared/alert";
 import "./contact.scss";
 
 const Contact: React.FC<{ innerRefs: any[] }> = ({ innerRefs }) => {

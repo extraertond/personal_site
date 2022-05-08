@@ -1,6 +1,6 @@
 import { useTranslation, Trans } from "react-i18next";
 import { ABOUT_PARAGRAPH_LABELS as paragraphs, ROLES } from "../../../constants/constants";
-import Writter from "../../shared/writter/writter";
+import Writter from "../../shared/writter";
 import avatar from "../../../assets/images/profile.jpg";
 import { useState } from "react";
 import "./about.scss";

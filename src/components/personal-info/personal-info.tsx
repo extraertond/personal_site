@@ -1,7 +1,7 @@
-import Abilities from "./abilities/abilities";
-import Contact from "./contact/contact";
-import Education from "./education/education";
-import Experiences from "./experience/experiences";
+import Abilities from "./abilities";
+import Contact from "./contact";
+import Education from "./education";
+import Experiences from "./experiences";
 import About from "./about/about";
 import "./personal-info.scss";
 
