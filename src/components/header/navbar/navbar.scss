@@ -1,3 +1,5 @@
+@import "../../../styles/variables";
+
 .navbar-container {
     display: flex;
     justify-content: space-between;
@@ -8,13 +10,29 @@
 .sections {
     display: flex;
     justify-content: space-around;
-    font-size: 25px;
     padding: 10px 0px;
+    font-size: 15px;
+
+    @media (min-width: $md) {
+        padding: 5px 0px;
+        font-size: 18px;
+    }
+
+    @media (min-width: $lg) {
+        font-size: 25px;
+        padding: 10px 0px;
+    }
 }
 
 .link {
-    margin-left: 20px;
+    margin-left: 7px;
+
+    @media (min-width: $lg) {
+        margin-left: 20px;
+    }
+
     cursor: pointer;
+
     &:hover {
         font-weight: bold;
         text-decoration: underline;

@@ -1,6 +1,18 @@
+@import "./variables";
+
 .section-title {
-    font-size: 40px;
     font-family: Sequel;
     text-transform: uppercase;
-    padding-top: 20px;
+    font-size: 20px;
+    padding-top: 10px;
+
+    @media (min-width: $md) {
+        font-size: 25px;
+        padding-top: 15px;
+    }
+
+    @media (min-width: $lg) {
+        font-size: 40px;
+        padding-top: 20px;
+    }
 }

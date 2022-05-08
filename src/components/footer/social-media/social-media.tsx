@@ -24,7 +24,6 @@ const EmailTooltip = styled(({ className, ...props }: any) => (
 ))(() => ({
     [`& .${tooltipClasses.tooltip}`]: {
         backgroundColor: "#f5f5f9",
-        fontSize: "15px",
         border: "1px solid #dadde9"
     }
 }));
@@ -33,14 +32,14 @@ const SocialMedia = () => {
     return (
         <div className="social-media-container">
             <ExternalLink url={LINKEDIN_LINK}>
-                <LinkedIn sx={{ fontSize: 50 }} />
+                <LinkedIn className="icon" />
             </ExternalLink>
             <ExternalLink url={GITHUB_LINK}>
-                <GitHub sx={{ fontSize: 50 }} />
+                <GitHub className="icon" />
             </ExternalLink>
             <EmailTooltip>
                 <div className="social-link" color="inherit">
-                    <MailOutline sx={{ fontSize: 50 }} />
+                    <MailOutline className="icon" />
                 </div>
             </EmailTooltip>
         </div>

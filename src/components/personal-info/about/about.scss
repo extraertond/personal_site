@@ -3,30 +3,73 @@
 .about-container {
     background-color: white;
     color: black;
-    padding: 100px 20px;
+    padding: 30px 10px;
+
+    @media (min-width: $lg) {
+        padding: 100px 20px;
+    }
 
     .roles-container {
-        padding-bottom: 50px;
         font-weight: bold;
         text-transform: uppercase;
-        font-size: 57px;
         font-family: Sequel;
+        font-size: 20px;
+
+        .text {
+            font-size: 15px;
+            min-height: 41.6px;
+
+            @media (min-width: $md) {
+                font-size: 20px;
+            }
+
+            @media (min-width: $lg) {
+                font-size: 30px;
+            }
+        }
+
+        @media (min-width: $md) {
+            font-size: 30px;
+            padding-bottom: 30px;
+        }
+
+        @media (min-width: $lg) {
+            font-size: 57px;
+            padding-bottom: 50px;
+        }
     }
 }
 
 .paragraph-container {
     color: white;
-    font-size: 35px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+
+    @media (min-width: $lg) {
+        flex-direction: row;
+    }
 
     .text-container {
         z-index: 1;
         background-color: black;
-        margin: 100px 0px 0px -60px;
-        padding: 20px;
-        font-size: 21px;
-        box-shadow: $container-box-shadow;
+        padding: 5px;
+        margin: 10px;
+        font-size: 12px;
+        box-shadow: $container-small-box-shadow;
+
+        @media (min-width: $md) {
+            box-shadow: $container-box-shadow;
+            padding: 20px;
+            font-size: 15px;
+        }
+
+        @media (min-width: $lg) {
+            margin: 100px 0px 0px -60px;
+            font-size: 21px;
+        }
     }
 }
 
@@ -36,12 +79,24 @@
     z-index: 0;
 
     .avatar {
-        box-shadow: $container-box-shadow;
-        border: 3px solid black;
-        width: 400px;
+        width: 150px;
+        border: 2px solid black;
+        box-shadow: $container-small-box-shadow;
+
+        @media (min-width: $lg) {
+            box-shadow: $container-box-shadow;
+            border: 3px solid black;
+            width: 400px;
+        }
     }
 
     button {
+        display: none;
+
+        @media (min-width: $lg) {
+            display: auto;
+        }
+
         font-family: Bai Jamjuree;
         font-weight: bold;
         text-transform: uppercase;
@@ -69,6 +124,7 @@
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }

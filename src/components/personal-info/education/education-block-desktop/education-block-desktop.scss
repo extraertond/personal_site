@@ -1,0 +1,57 @@
+@import "../../../../styles/variables";
+
+.university-education-desktop-container,
+.course-education-desktop-container,
+.school-education-desktop-container {
+    display: none;
+
+    @media (min-width: $lg) {
+        display: flex;
+    }
+
+    font-size: 17px;
+
+    .education {
+        max-width: 700px;
+
+        .education-img {
+            border: 5px solid white;
+            border-radius: 10px;
+        }
+
+        img {
+            max-width: 200px;
+        }
+
+        .clip {
+            width: 50px;
+            transform: rotate(40deg);
+            margin-bottom: -55px;
+            left: 0;
+        }
+    }
+}
+
+.university-education-desktop-container {
+    justify-content: start;
+}
+
+.course-education-desktop-container {
+    justify-content: center;
+}
+
+.school-education-desktop-container {
+    justify-content: end;
+}
+
+.education-block-desktop-container {
+    display: flex;
+}
+
+.start {
+    text-align: start;
+}
+
+td {
+    padding: 10px;
+}

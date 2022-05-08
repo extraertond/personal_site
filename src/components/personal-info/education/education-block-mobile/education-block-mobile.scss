@@ -1,0 +1,47 @@
+@import "../../../../styles/variables";
+
+.education-mobile-container {
+    display: none;
+
+    @media (max-width: $lg) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    font-size: 14px;
+
+    .title {
+        font-size: 16px;
+        margin-bottom: 20px;
+        text-decoration: underline;
+    }
+
+    .center {
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .img-container {
+        margin-bottom: 20px;
+
+        .education-img {
+            border: 5px solid white;
+            border-radius: 10px;
+        }
+
+        img {
+            max-width: 150px;
+            max-height: 90px;
+        }
+    }
+
+    .clip {
+        width: 30px;
+        transform: rotate(40deg);
+        margin-right: -25px;
+        margin-bottom: 60px;
+    }
+
+}
