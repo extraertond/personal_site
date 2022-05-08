@@ -46,7 +46,7 @@ const ScrollButton: React.FC<{}> = () => {
 
     return (
         <div className="scroll-button" onClick={scrollToTop} style={{ display: visible ? "inline" : "none" }}>
-            <ArrowCircleUpIcon sx={{ fontSize: 50, color: color }} />
+            <ArrowCircleUpIcon className="icon" sx={{ color: color }} />
         </div>
     );
 };

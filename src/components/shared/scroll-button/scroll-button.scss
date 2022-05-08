@@ -1,8 +1,29 @@
+@import "../../../styles/variables";
+
 .scroll-button {
     position: fixed;
-    width: 80px;
-    right: 0px;
+    right: 10px;
     bottom: 20px;
     z-index: 1;
     cursor: pointer;
+
+    @media (min-width: $md) {
+        right: 20px;
+    }
+
+    @media (min-width: $lg) {
+        right: 20px;
+    }
+
+    .icon {
+        font-size: 30px;
+
+        @media (min-width: $md) {
+            font-size: 40px;
+        }
+
+        @media (min-width: $lg) {
+            font-size: 50px;
+        }
+    }
 }
