@@ -57,12 +57,22 @@ export const LINKEDIN_LINK = "https://www.linkedin.com/in/n%C3%A9stor-fern%C3%A1
 export const GITHUB_LINK = "https://github.com/extraertond";
 export const PROJECT_REPO_LINK = "https://github.com/extraertond/personal_site";
 
-export const SECTIONS = [
+export const NAVBAR_SECTIONS = [
     { id: "about", label: "links.about" },
     { id: "education", label: "links.education" },
-    { id: "experience", label: "links.experience" },
+    { id: "experiences", label: "links.experiences" },
     { id: "abilities", label: "links.abilities" },
     { id: "contact", label: "links.contact" }
+];
+
+export const SECTIONS = [
+    { id: "navbar", backgroundWhite: false },
+    { id: "about", backgroundWhite: true },
+    { id: "education", backgroundWhite: false },
+    { id: "experiences", backgroundWhite: true },
+    { id: "abilities", backgroundWhite: false },
+    { id: "contact", backgroundWhite: true },
+    { id: "footer", backgroundWhite: false }
 ];
 
 export const ROLES = [
