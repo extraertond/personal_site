@@ -53,16 +53,16 @@
         "technologies": "Tecnologías",
         "sombradoble": {
             "company": "Sombradoble SL",
-            "role": "FullStack Developer",
-            "period": "Marzo 2020 - Agosto 2020",
-            "description": "Contrato en prácticas extracurriculares hasta julio, luego contrato clásico. Funciones totales de Full Stack Developer (desarrollo web Frontend, Backend, Gestión del servidor y base de datos...). Desarrollo para aplicaciones móviles con <strong>Ionic + React</strong>. El stack principal para el desarrollo web ha sido <strong>React en el Frontend.</strong> Respecto al backend el stack ha sido <strong>MySQL, Node y Loopback.</strong>",
+            "role": "Web Developer",
+            "period": "Septiembre 2019 - Agosto 2020",
+            "description": "Funciones totales de desarrollador principal (desarrollo web Frontend, Backend, Gestión del servidor y base de datos...). Desarrollo para aplicaciones móviles con <strong>Ionic + React</strong>. El stack principal para el desarrollo web ha sido <strong>React en el Frontend.</strong> Respecto al backend el stack ha sido <strong>MySQL, Node y Express.</strong>",
             "webpage": "https://www.sombradoble.es/"
         },
         "nazaries": {
             "company": "Nazaríes IT",
             "role": "FullStack Web Developer",
             "period": "Septiembre 2020 - Mayo 2022",
-            "description": "Desarrollo de aplicaciones móviles con React Native Frontend: desarrollo de aplicaciones web en su mayoría con <strong>React</strong> y en menor medida <strong>Angular</strong>. Backend: desarrollo de <strong>APIs y microservicios con Node y Express.</strong> Bases de datos MySQL y Mongodb. Pequeños desarrollos con RoR y Laravel.",
+            "description": "Desarrollo de aplicaciones móviles con React Native Frontend: desarrollo de aplicaciones web en su mayoría con <strong>React</strong> y en menor medida <strong>Angular</strong>. También algunos desarrollos de backend: <strong>APIs y microservicios con Node y Express.</strong> Bases de datos MySQL y Mongodb. Pequeños desarrollos con RoR y PHP.",
             "webpage": "https://www.nazaries.com/"
         }
     },

@@ -53,16 +53,16 @@
         "technologies": "Technologies",
         "sombradoble": {
             "company": "Sombradoble SL",
-            "role": "FullStack Developer",
-            "period": "March 2020 - August 2020",
-            "description": "Extracurricular internship contract until July, then classic contract. Total functions of Full Stack Developer (Frontend web development, Backend, Server and database management...). Development for mobile applications with <strong>Ionic + React</strong>. The main stack for web development has been <strong>React in the Frontend.</strong> Regarding the backend, the stack has been <strong>MySQL, Node and Loopback.</strong>",
+            "role": "Web Developer",
+            "period": "September 2019 - August 2020",
+            "description": "Total functions of Full Stack Developer (Frontend web development, Backend, Server and database management...). Development for mobile applications with <strong>Ionic + React</strong>. The main stack for web development has been <strong>React in the Frontend.</strong> Regarding the backend, the stack has been <strong>MySQL, Node and Express.</strong>",
             "webpage": "https://www.sombradoble.es/"
         },
         "nazaries": {
             "company": "Nazaries IT",
             "role": "FullStack Web Developer",
             "period": "September 2020 - May 2022",
-            "description": "Mobile app development with React Native Frontend: Web app development mostly with <strong>React</strong> and to a lesser extent <strong>Angular</strong>. Backend: development of <strong>APIs and microservices with Node and Express.</strong> MySQL and Mongodb databases. Small developments with RoR and Laravel.",
+            "description": "Mobile app development with React Native Frontend: Web app development mostly with <strong>React</strong> and to a lesser extent <strong>Angular</strong>. Also a backend developments: <strong>APIs and microservices with Node and Express.</strong> MySQL and Mongodb databases. Small developments with RoR and PHP.",
             "webpage": "https://www.nazaries.com/"
         }
     },
